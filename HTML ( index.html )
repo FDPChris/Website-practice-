@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Brand New Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BrandNewSite</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <h1>Welcome to Your Brand New Website</h1>
+    <p>Modern, responsive, and ready to launch!</p>
+    <button onclick="scrollToSection('about')">Learn More</button>
+  </section>
+  
+  <section id="about">
+    <h2>About This Site</h2>
+    <p>This is a simple, clean template to kickstart your web presence. You can customize it as you like!</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+  
+  <footer>
+    &copy; 2025 BrandNewSite. All rights reserved.
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
