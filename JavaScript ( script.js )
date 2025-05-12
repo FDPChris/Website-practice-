@@ -1,0 +1,16 @@
+// Smooth scroll to section
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Contact form handling
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    formMessage.textContent = "Thank you for contacting us, " + document.getElementById('name').value + "!";
+    form.reset();
+  });
+});
